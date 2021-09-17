@@ -7,7 +7,7 @@ import java.awt.*;
  * @author Ben Caffee
  * @version 6/10/2021
  */
-public class GUI extends JFrame {
+public class Gui extends JFrame {
 
     /** The width of the GUI window */
     private static final int WIDTH = 500;
@@ -74,7 +74,7 @@ public class GUI extends JFrame {
      *
      * @param subject The given subject
      */
-    public GUI(FractalSubject subject) {
+    public Gui(FractalSubject subject) {
         this.subject = subject;
         setUpFrame();
         setUpPanelWidgets();
@@ -173,6 +173,16 @@ public class GUI extends JFrame {
         depthSlider.setPaintLabels(true);
     }
 
-    //Note to self: If doing "real time" extra credit, GUI will require more action listeners (one for each widget),
-    //and call sendData for each update (to redraw with each change)
+    /*
+    TODO:
+    * Moves the drawing output even though I have positioned it as I want it.
+    * Widgets should be farther away from the edges of the GUI and labels need to be on the widgets
+    * Dark mode doesn't always work.
+    * When drawing it should have the same output area and not create a new DrawPanel each time
+    * Documentation not complete
+    * Reduce number of global variables
+    * Add real time drawing. This will require the GUI having more action listeners (one for each widget),
+      and calling sendData for each update (to redraw with each change)
+    * Stop drawing after a certain object count and add a warning
+    */
 }
