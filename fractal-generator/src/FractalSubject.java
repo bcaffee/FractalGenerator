@@ -31,7 +31,7 @@ public interface FractalSubject {
      * @param recursionDepth   The given recursion depth
      */
     void sendData(Color color, int childCount, boolean darkMode, int childParentRatio, int recursionDepth);
-    /* TODO: Note to self: If doing "warning" extra credit, sendData() would need to return a boolean
+    /* TODO:
     Check shape count with the following: 2 * (childCount ^ (recursion depth at that layer)) and then you have to add up
     all the layers (eg. recursion depth 4 means 4 layers)
     For the above example, shape count = 1 + (2 * (childCount ^ 1)) + (2 * (childCount ^ 2)) + (2 * (childCount ^ 3))

@@ -181,8 +181,8 @@ public class Gui extends JFrame {
     * When drawing it should have the same output area and not create a new DrawPanel each time
     * Documentation not complete
     * Reduce number of global variables
-    * Add real time drawing. This will require the GUI having more action listeners (one for each widget),
-      and calling sendData for each update (to redraw with each change)
-    * Stop drawing after a certain object count and add a warning
+    * Add real time drawing (requires the GUI to have more action listeners (one for each widget),
+    * and calling sendData for each update (to redraw with each change)
+    * Stop drawing after a certain object count and add a warning (sendData would need to return a boolean)
     */
 }
